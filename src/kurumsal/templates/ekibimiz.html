@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block body %}
+
+<section class="banner blur">
+    <div class="sub">
+        <div class="container">
+            <h1>EKİBİMİZ</h1>
+            <ul>
+                <li>
+                    <a href="#"><i class="fi fi-rr-home"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Ekibimiz</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="subPage teamPage">
+    <div class="container">
+        <div class="row">            
+            {% include 'includes/left_menü.html' %}
+            <div class="col-lg-9 col-md-8">
+                <ul class="projectList">
+                    <li class="projectBox">
+                        <p>
+                            MITRA SİPAHİ
+                            <span>Operasyon Müdürü</span>
+                        </p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/Rectangle 265.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                    <li class="projectBox">
+                        <p>
+                            MITRA SİPAHİ
+                            <span>Operasyon Müdürü</span>
+                        </p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/Rectangle 265.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                    <li class="projectBox">
+                        <p>
+                            MITRA SİPAHİ
+                            <span>Operasyon Müdürü</span>
+                        </p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/Rectangle 265.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock  %}

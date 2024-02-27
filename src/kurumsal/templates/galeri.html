@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block body %}
+
+
+<section class="banner blur">
+    <div class="sub">
+        <div class="container">
+            <h1>GALERİ</h1>
+            <ul>
+                <li>
+                    <a href="#"><i class="fi fi-rr-home"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Galeri</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="subPage galleryPage">
+    <div class="container">
+        <div class="row">
+            {% include 'includes/left_menü.html' %}
+            <div class="col-lg-9 col-md-8">
+                <ul class="galleryList">
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery blur" onclick="onClick(this)" title="{% static 'assets/image/article/home_about.png' %}">
+                        <a href="javascript:void(0);">
+                            <div class="imgContent">
+                                <img src="{% static 'assets/image/article/home_about.png' %}" alt="Galeri">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+        {% include 'includes/bottom_box.html' %}
+    </div>
+</section>
+
+{% endblock  %}

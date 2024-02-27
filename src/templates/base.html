@@ -1,0 +1,166 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Ferhattugrul</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ferhattugrul">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="description" content=" is a clean and modern design, BootStrap 4 responsive, business and portfolio multipurpose HTML5 template with 36+ ready homepage demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+        <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-touch-icon-114x114.png' %}">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-icons.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/theme-vendors.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}" />
+    </head>
+    <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#333a3a">
+      
+  <!-- start header -->
+
+  
+  {% url 'anasayfa' as home_url %}
+  {% url 'portfolio' as port_url %}
+  {% url 'blogs' as blog %}
+  {% url 'iletisim:iletisim' as contact_url %}
+  {% url 'hakkimizda' as hakkimizda %}
+
+  {% url 'sertifikalarimiz' as sertifikalarimiz %}
+  {% url 'hizmetlerimiz' as hizmetlerimiz %}
+  {% url 'ekibimiz' as ekibimiz %}
+  {% url 'nedenbiz' as nedenbiz %}
+  <header>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
+        <div class="container-lg nav-header-container">
+            <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
+                <a class="navbar-brand" href="{{home_url}}">
+                    <img src="{% static 'images/logo.png' %}" data-at2x="images/logo.png" class="default-logo" alt="">
+                    <img src="{% static 'images/logo.png' %}" data-at2x="images/logo.png" class="alt-logo" alt="">
+                    <img src="{% static 'images/logo.png' %}" data-at2x="images/logo.png" class="mobile-logo" alt="">
+                </a>
+            </div>
+            <div class="col-auto menu-order px-lg-0">
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav alt-font">
+                        <li class="nav-item ">
+                            <a href="{{home_url}}" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="{% url 'portfolio' %}" class="nav-link">Réalisations</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="{{blog}}" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="{{hakkimizda}}" class="nav-link">Avis</a>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a href="{{contact_url}}" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {% comment %} <div class="col-auto text-right pr-0 font-size-0">
+                <div class="header-search-icon search-form-wrapper">
+                    <a href="javascript:void(0)" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a>
+                    <!-- start search input -->
+                    <div class="form-wrapper">
+                        <button title="Close" type="button" class="search-close alt-font">×</button>
+                        <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
+                            <div class="search-form-box">
+                                <span class="search-label alt-font text-small text-uppercase text-medium-gray">Qu'est-ce que tu cherches?</span>
+                                <input class="search-input alt-font" id="search-form-input5e219ef164995" placeholder="Enter your keywords..." name="s" value="" type="text" autocomplete="off">
+                                <button type="submit" class="search-button">
+                                    <i class="feather icon-feather-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end search input -->
+                </div>
+                <div class="header-language dropdown d-lg-inline-block">
+                    <a href="javascript:void(0);"><i class="feather icon-feather-globe"></i></a>
+                    <ul class="dropdown-menu alt-font">
+                        <li><a href="/en{{ request.get_full_path|slice:'3:' }}" title="English"><span class="icon-country"><img src="{% static 'images/country-flag-16X16/usa.png' %}" alt=""></span>English</a></li>
+                        <li><a href="/fr{{ request.get_full_path|slice:'3:' }}" title="France"><span class="icon-country"><img src="{% static 'images/country-flag-16X16/france.png' %}" alt=""></span>France</a></li>
+                    </ul>
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </nav>
+    <!-- end navigation -->
+</header>
+<!-- end header -->
+
+
+        <div class="main-content">
+			{% block body %}
+
+
+				
+			{% endblock  %}
+
+		</div>
+        <!-- start footer -->
+        <footer class="footer-digital-agency footer-light footer-sticky">
+            <div class="footer-top padding-six-tb lg-padding-eight-tb md-padding-50px-tb">
+                <div class="container">
+                    <div class="row justify-content-center">
+                         <!-- start footer column -->
+                         <div class="col-12 col-lg-3 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
+                            <a href="{{home_url}}" class="footer-logo margin-40px-bottom d-inline-block md-margin-30px-bottom xs-margin-20px-bottom"><img src="{% static 'images/logo.png' %}" data-at2x="static/images/logo.png" alt=""></a>
+                            <span class="alt-font font-weight-500 text-extra-large line-height-32px letter-spacing-minus-1-half text-extra-dark-gray d-block w-85 lg-w-100 md-w-70 sm-w-100 xs-w-90">Notre expérience vous garantit un résultat sans faute.</span>
+                        </div>
+                        <!-- end footer column -->
+                      
+                        <!-- start footer column -->
+                        <div class="col-12 col-xl-2 offset-xl-1 col-lg-3 col-sm-6 order-sm-2 order-lg-0 md-margin-50px-bottom xs-no-margin-bottom">
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray text-uppercase text-medium letter-spacing-2px margin-25px-bottom xs-margin-25px-bottom">Rejoignez-nous</span>
+                            <div class="social-icon-style-12">
+                                <ul class="extra-small-icon">
+                                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fab fa-linkedin "></i></a></li>
+                                    <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end footer column -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom padding-5-half-rem-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-2 order-md-1 text-sm-center text-md-left last-paragraph-no-margin">
+                            <p>&copy; 2021  is Proudly Powered by <a href="{{home_url}}" target="_blank" class="text-decoration-line-bottom text-extra-dark-gray font-weight-500">udesign</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+        <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/theme-vendors.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

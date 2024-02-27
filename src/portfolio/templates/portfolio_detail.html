@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+<section class="bg-gradient-light-orange-light-pink">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-end extra-small-screen align-items-end">
+            <div class="w-100 w-md-50 page-title-extra-small">
+                <h1 class="alt-font text-extra-dark-gray position-relative padding-90px-left padding-15px-right sm-padding-55px-left mb-md-0 sm-margin-20px-bottom"><span class="page-title-separator-line bg-black w-70px sm-w-40px"></span> {{product.category|default_if_none:""}} </h1>
+            </div>
+            <div class="w-100 w-md-50">
+                <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">{{product.title|default_if_none:""}}</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="overlap-height" style="height: 703.575px;">
+    <div class="container">
+        <div class="row overlap-gap-section">
+            {{product.decription|safe|default_if_none:""}}
+        </div>
+    </div>
+</section>
+
+
+  <!-- start section -->
+  <section class="bg-light-gray overflow-visible wow animate__fadeIn">
+    <div class="container">
+        <div class="row overlap-section-three-fourth">
+            <div class="col px-md-0">
+                <ul class="portfolio-overlay portfolio-wrapper grid grid-loading grid-2col xl-grid-2col lg-grid-2col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
+                    <li class="grid-sizer"></li>
+
+                    {% if product.PortfolioModelGaleri.all %} 
+            
+                    {% for inlineobj in product.PortfolioModelGaleri.all  %}
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item grid-item-double wow animate__fadeIn">
+                        <a href="{% if inlineobj.image %}{{inlineobj.image.url}}{% else %}https://via.placeholder.com/600x600{% endif %}" title="" data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="{% if inlineobj.image %}{{inlineobj.image.url}}{% else %}https://via.placeholder.com/600x600{% endif %}" alt="" />
+                                    <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                    {% endfor %}
+
+                    {% endif %}
+                 
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
+                        <a href="https://via.placeholder.com/600x600" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/600x600" alt="" />
+                                    <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="https://via.placeholder.com/600x600" title="Lightbox gallery image title..." data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/600x600" alt="" />
+                                    <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+
+
+{% endblock %}

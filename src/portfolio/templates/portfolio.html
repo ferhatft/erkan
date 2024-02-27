@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+
+<section class="bg-iris-blue">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-5 col-lg-6 col-sm-8 text-center margin-5-rem-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 letter-spacing-minus-1px">You design it</h5>
+                <span class="d-inline-block alt-font text-medium text-brown text-uppercase font-weight-500 margin-20px-bottom sm-margin-15px-bottom">Créez votre identité.</span>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center margin-5-rem-bottom">
+                <h4 class="alt-font text-extra-dark-gray font-weight-600">Découvrez nos réalisations</h4>  
+                <span class="alt-font margin-5px-bottom text-brown d-inline-block font-weight-500">Nous vous proposons, de la création jusqu’à l’impression de tous vos supports de communication.</span>
+                <span class="alt-font margin-5px-bottom text-brown d-inline-block font-weight-500">Logo, cartes de visite, dépliants, enseignes, covering, vitrines, adhésifs, objets pub, textiles, rince-doigts, sentorettes, panneaux.</span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+
+            {% if products  %}
+            {% for obj in products  %}
+            <!-- start team item -->
+            <div onclick="location.href='{{obj.get_absolute_url}}'" class="col-6 team-style-01 text-left  margin-30px-bottom  sm-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                <figure class="border-radius-5px">
+                    <div class="team-member-image">
+                        <img  alt="" src="{% if obj.mainimage %}{{obj.mainimage.url}}{% else %}https://via.placeholder.com/603x325{% endif %}" data-no-retina="">
+                        <!-- 603x325 -->
+                        <div class="team-overlay bg-brown border-radius-5px"></div>
+                    </div>
+                    <figcaption  class="d-flex flex-column padding-60px-lr padding-50px-tb md-padding-30px-all">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        </div>
+                        <span class="team-title d-block padding-one-bottom alt-font text-extra-medium text-white font-weight-500 mt-auto">{{obj.title}}</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- end team item -->
+            {% endfor %}
+            {% endif %}
+
+            <!-- start team item -->
+            <div class="col-6 team-style-01 text-left sm-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                <figure class="border-radius-5px">
+                    <div class="team-member-image">
+                        <img alt="" src="https://via.placeholder.com/603x325" data-no-retina="">
+                        <div class="team-overlay bg-brown border-radius-5px"></div>
+                    </div>
+                    <figcaption class="d-flex flex-column padding-60px-lr padding-50px-tb md-padding-30px-all">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        </div>
+                        <span class="team-title d-block padding-one-bottom alt-font text-extra-medium text-white font-weight-500 mt-auto">Alexander Harvard</span>
+                        <span class="team-sub-title d-block text-medium text-white-transparent alt-font">Operations officer</span>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <!-- end team item -->
+            <!-- start team item -->
+            <div class="col-6 team-style-01 text-left sm-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                <figure class="border-radius-5px">
+                    <div class="team-member-image">
+                        <img alt="" src="https://via.placeholder.com/603x325" data-no-retina="">
+                        <div class="team-overlay bg-brown border-radius-5px"></div>
+                    </div>
+                    <figcaption class="d-flex flex-column padding-60px-lr padding-50px-tb md-padding-30px-all">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        </div>
+                        <span class="team-title d-block padding-one-bottom alt-font text-extra-medium text-white font-weight-500 mt-auto">Alexander Harvard</span>
+                        <span class="team-sub-title d-block text-medium text-white-transparent alt-font">Operations officer</span>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <!-- end team item -->
+            <!-- start team item -->
+            <div class="col-6 team-style-01 text-left sm-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                <figure class="border-radius-5px">
+                    <div class="team-member-image">
+                        <img alt="" src="https://via.placeholder.com/603x325" data-no-retina="">
+                        <div class="team-overlay bg-brown border-radius-5px"></div>
+                    </div>
+                    <figcaption class="d-flex flex-column padding-60px-lr padding-50px-tb md-padding-30px-all">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/" target="_blank" class="icon-extra-small text-white"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        </div>
+                        <span class="team-title d-block padding-one-bottom alt-font text-extra-medium text-white font-weight-500 mt-auto">Alexander Harvard</span>
+                        <span class="team-sub-title d-block text-medium text-white-transparent alt-font">Operations officer</span>
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <!-- end team item -->
+            
+            <!-- end team item -->
+        </div>
+    </div>           
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+<style>
+    .nav-link{
+        color: #232323 !important;
+    }
+</style>
+
+
+<section class="half-section bg-light-gray parallax" data-parallax-background-ratio="0.5" style="background-image: url(&quot;images/portfolio-bg2.jpg&quot;); background-position: 50% 0px;">
+  <div class="container">
+      <div class="row align-items-stretch justify-content-center extra-small-screen">
+          <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">
+              <h1 class="alt-font text-gradient-sky-blue-pink margin-15px-bottom d-inline-block">Blog</h1>
+              <h2 class="text-extra-dark-gray alt-font font-weight-500 letter-spacing-minus-1px line-height-50 sm-line-height-45 xs-line-height-30 no-margin-bottom">Découvrez nos articles sur toutes nos réalisations</h2>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="bg-light-gray pt-0">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-9 col-md-12 col-xl-10 blog-content">
+              <div class="blog-list blog-side-image">
+
+                
+        
+        {% if blogs %}
+        
+        {% for obj in blogs  %}
+
+        
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <div class="blog-post-image sm-margin-25px-bottom">
+                            <a href="{{obj.get_absolute_url}}" title=""><img src="{% if obj.image %}{{obj.image.url}}{% else %}https://via.placeholder.com/600x600{% endif %}" alt="" data-no-retina=""></a>
+                        </div>
+                        <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                            <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">{{obj.created_date}}</a>
+                            <a href="{{obj.get_absolute_url}}" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">{{obj.title}}</a>
+                            <p class="margin-seventeen-bottom sm-margin-25px-bottom">{{obj.intro|safe|truncatewords:30}}</p>
+                            <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                {% comment %} <img class="avtar-image" src="https://via.placeholder.com/149x149" alt="" data-no-retina=""> {% endcomment %}
+                                {% comment %} <span>
+                                    <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Joe sparano</a></span>
+                                    <span class="separator bg-medium-gray"></span>
+                                    <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Creative</a></span>
+                                </span> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end blog item -->
+        {% endfor %}
+                
+        {% endif %}
+
+        
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                          <div class="blog-post-image sm-margin-25px-bottom">
+                              <a href="blog-post-layout-02.html" title=""><img src="https://via.placeholder.com/1200x840" alt="" data-no-retina=""></a>
+                          </div>
+                          <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                              <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">25 February 2020</a>
+                              <a href="blog-post-layout-02.html" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">Good design is obvious great design transparent</a>
+                              <p class="margin-seventeen-bottom sm-margin-25px-bottom">Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been dummy text...</p>
+                              <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                  <img class="avtar-image" src="https://via.placeholder.com/400x400" alt="" data-no-retina="">
+                                  <span>
+                                      <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Lindsey bucki</a></span>
+                                      <span class="separator bg-medium-gray"></span>
+                                      <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Business</a></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end blog item -->
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                          <div class="blog-post-image sm-margin-25px-bottom">
+                              <a href="blog-post-layout-03.html" title=""><img src="https://via.placeholder.com/1200x840" alt="" data-no-retina=""></a>
+                          </div>
+                          <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                              <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">30 January 2020</a>
+                              <a href="blog-post-layout-03.html" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">Any product that needs manual to work is broken</a>
+                              <p class="margin-seventeen-bottom sm-margin-25px-bottom">Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been dummy text...</p>
+                              <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                  <img class="avtar-image" src="https://via.placeholder.com/400x400" alt="" data-no-retina="">
+                                  <span>
+                                      <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Bill gardner</a></span>
+                                      <span class="separator bg-medium-gray"></span>
+                                      <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Modern</a></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end blog item -->
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                          <div class="blog-post-image sm-margin-25px-bottom">
+                              <a href="blog-post-layout-04.html" title=""><img src="https://via.placeholder.com/1200x840" alt="" data-no-retina=""></a>
+                          </div>
+                          <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                              <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">23 December 2019</a>
+                              <a href="blog-post-layout-04.html" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">Everything is designed for things are the designed</a>
+                              <p class="margin-seventeen-bottom sm-margin-25px-bottom">Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been dummy text...</p>
+                              <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                  <img class="avtar-image" src="https://via.placeholder.com/400x400" alt="" data-no-retina="">
+                                  <span>
+                                      <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Mark lamb</a></span>
+                                      <span class="separator bg-medium-gray"></span>
+                                      <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Lifestyle</a></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end blog item -->
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                          <div class="blog-post-image sm-margin-25px-bottom">
+                              <a href="blog-post-layout-05.html" title=""><img src="https://via.placeholder.com/1200x840" alt="" data-no-retina=""></a>
+                          </div>
+                          <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                              <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">20 October 2019</a>
+                              <a href="blog-post-layout-05.html" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">Houseful of new furniture doesn't mean lot modern</a>
+                              <p class="margin-seventeen-bottom sm-margin-25px-bottom">Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been dummy text...</p>
+                              <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                  <img class="avtar-image" src="https://via.placeholder.com/400x400" alt="" data-no-retina="">
+                                  <span>
+                                      <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Lindsey bucki</a></span>
+                                      <span class="separator bg-medium-gray"></span>
+                                      <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Furniture</a></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end blog item -->
+                  <!-- start blog item --> 
+                  <div class="blog-post bg-white box-shadow-medium margin-30px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                          <div class="blog-post-image sm-margin-25px-bottom">
+                              <a href="blog-post-layout-01.html" title=""><img src="https://via.placeholder.com/1200x840" alt="" data-no-retina=""></a>
+                          </div>
+                          <div class="post-details padding-4-half-rem-lr md-padding-2-half-rem-lr sm-no-padding">
+                              <a href="blog-masonry.html" class="alt-font text-small text-fast-blue font-weight-500 text-uppercase d-inline-block margin-15px-bottom sm-margin-10px-bottom">18 February 2020</a>
+                              <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-large text-extra-dark-gray d-block margin-20px-bottom sm-margin-10px-bottom">Consider every mistake for you do make as an asset</a>
+                              <p class="margin-seventeen-bottom sm-margin-25px-bottom">Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum has been dummy text...</p>
+                              <div class="alt-font text-extra-small text-uppercase d-flex align-items-center sm-margin-10px-bottom">
+                                  <img class="avtar-image" src="https://via.placeholder.com/149x149" alt="" data-no-retina="">
+                                  <span>
+                                      <span class="d-inline-block">By <a href="blog-masonry.html" class="text-extra-dark-gray">Paul meyer</a></span>
+                                      <span class="separator bg-medium-gray"></span>
+                                      <span class="d-inline-block">In <a href="blog-masonry.html" class="text-extra-dark-gray">Finance</a></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end blog item -->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+  
+{% endblock body %}

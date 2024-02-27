@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block body %}
+
+<section class="banner blur">
+    <div class="sub">
+        <div class="container">
+            <h1>HİZMETLER</h1>
+            <ul>
+                <li>
+                    <a href="#"><i class="fi fi-rr-home"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Hizmetler</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="subPage servicesPage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="subMenu">
+                    <ul>
+                        <li class="title">KURUMSAL</li>
+                        <li>
+                            <a href="{% url 'hakkimizda' %}" >
+                                Hakkımızda
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'sertifikalarimiz' %}" >
+                                Sertifikalarımız
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'hizmetlerimiz' %}" class="active">
+                                Hizmetlerimiz
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'ekibimiz' %}">
+                                Ekibimiz
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'nedenbiz' %}">
+                                Neden Biz ?
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'galeri' %}">
+                                Galeri
+                                <i class="fi fi-rr-angle-small-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="leftBox blur">
+                    <div class="content">
+                        <p class="title">Yeni Projeler <br> Bizi Heyecanlandırır!</p>
+                        <p class="text">Bizimle iletişime geçebilir ve projenizi bizimle paylaşabilirsiniz.</p>
+                        <a href="{{contact_url}}" class="button c-white border h-40">TEKLİF ALIN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <ul class="projectList">
+                    <li class="projectBox">
+                        <p>VİLLA TASARIM</p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/home_about.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                    <li class="projectBox">
+                        <p>VİLLA TASARIM</p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/home_about.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                    <li class="projectBox">
+                        <p>VİLLA TASARIM</p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/home_about.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                    <li class="projectBox">
+                        <p>VİLLA TASARIM</p>
+                        <div class="imgContent blur">
+                            <img data-src="{% static 'assets/image/article/home_about.png' %}" alt="" class="lazy">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock  %}

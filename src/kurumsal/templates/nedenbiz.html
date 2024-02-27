@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block body %}
+
+
+<section class="banner blur">
+    <div class="sub">
+        <div class="container">
+            <h1>NEDEN BİZ ?</h1>
+            <ul>
+                <li>
+                    <a href="#"><i class="fi fi-rr-home"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Neden Biz ?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="subPage aboutPage">
+    <div class="container">
+        <div class="row">
+            {% include 'includes/left_menü.html' %}
+            <div class="col-lg-4">
+                <div class="imgContent imgBorder">
+                    <img data-src="{% static 'assets/image/article/home_about.png' %}" alt="" class="lazy">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="detailContent">
+                    <h2>
+                        <span>KUAS KURUMSAL</span>
+                        Bizi Yakından Tanıyın
+                    </h2>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ex omnis, temporibus quaerat assumenda sequi ut inventore? Pariatur ea alias voluptatem quod nam vel optio. Fugit error soluta provident consectetur.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ex omnis, temporibus quaerat assumenda sequi ut inventore? Pariatur ea alias voluptatem quod nam vel optio. Fugit error soluta provident consectetur.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ex omnis, temporibus quaerat assumenda sequi ut inventore? Pariatur ea alias voluptatem quod nam vel optio. Fugit error soluta provident consectetur.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="companyDatas">
+                    <ul class="datasMain">
+                        <li>
+                            <img data-src="{% static 'assets/image/icons/mutlu-musteri.svg' %}" alt="Mutlu Müşteri" class="lazy">
+                            <p>
+                                8056+
+                                <span>Mutlu Müşteri</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img data-src="{% static 'assets/image/icons/tamamlanan-proje.svg' %}" alt="Tamamlanan Proje" class="lazy">
+                            <p>
+                                10000+
+                                <span>Tamamlanan Proje</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img data-src="{% static 'assets/image/icons/yeni-tasarim.svg' %}" alt="Yeni Tasarım" class="lazy">
+                            <p>
+                                600+
+                                <span>Yeni Tasarım</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img data-src="{% static 'assets/image/icons/tecrube.svg' %}" alt="Yıllık Tecrübe" class="lazy">
+                            <p>
+                                20+
+                                <span>Yıllık Tecrübe</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock  %}

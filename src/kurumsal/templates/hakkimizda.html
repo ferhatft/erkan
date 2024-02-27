@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block body %}
+
+<!-- start hero section -->
+<section class="parallax p-0 home-digital-agency" data-parallax-background-ratio="0.5"
+    style="background-image: url('https://via.placeholder.com/1920x1080')">
+    <div class="opacity-light bg-gradient-dark-slate-blue-transparent"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 full-screen md-h-600px sm-h-350px d-flex flex-column">
+                <!-- <h1 class="alt-font font-weight-600 text-white title-extra-large w-50 mt-auto mb-0 letter-spacing-minus-5px sm-letter-spacing-minus-1-half xs-w-70">Digital agency</h1> -->
+                <div class="d-flex flex-row align-items-center mt-auto margin-7-half-rem-bottom">
+                    <span
+                        class="bg-light-brownish-orange w-50 h-1px margin-9-rem-right sm-w-40 sm-margin-5-rem-right xs-w-15 xs-margin-2-rem-right"></span>
+                    <span class="alt-font text-large text-light-brownish-orange">Over 30 years of experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="overlap-height " style="height: 703.575px;">
+    <div class="container">
+        <span
+            class="alt-font text-medium text-uppercase font-weight-500 margin-20px-bottom d-inline-block text-extra-dark-gray">Your
+            timeless staples identity</span>
+        <h4 class="alt-font font-weight-500 text-extra-dark-gray d-inline-block w-90">Clothing brand that produces
+            timeless wardrobe staples</h4>
+        <div class="row overlap-gap-section">
+            <p class="margin-10px-bottom"><span class="first-letter-big text-yellow-ochre-light mr-4">M</span>Lorem
+                ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has suvived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. Lorem ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when
+                an unknown printer took.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, tempore illum. Eligendi, dolor eaque velit
+                deserunt consectetur est unde error amet, eum autem consequatur laudantium totam, voluptas nihil sunt
+                perferendis?</p>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- start section -->
+<section class="cover-background wow animate__fadeIn padding-60px-bottom"
+    style="background-image:url('https://via.placeholder.com/1920x983');">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-6 col-lg-7 col-md-9 xs-margin-30px-bottom text-center wow animate__fadeIn"
+                data-wow-delay="0.4s">
+                <div class="swiper-container white-move"
+                    data-slider-options='{ "slidesPerView": 1, "loop": true, "spaceBetween": 0, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 19000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next-nav-2", "prevEl": ".swiper-button-previous-nav-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                    <div class="swiper-wrapper">
+
+                        
+                        
+                        {% if clientopinion %}
+                        {% for obj in clientopinion  %}
+                        <!-- start testimonial item -->
+                        <div class="swiper-slide xs-margin-30px-bottom">
+                            <img class="rounded-circle margin-3-rem-bottom w-100px"
+                                src="{% if obj.image %}{{obj.image.url}}{% else %}https://via.placeholder.com/187x187{% endif %}" alt="" />
+                            <p class="text-extra-large line-height-32px font-weight-300 w-85 d-inline-block"> {{obj.decription|default_if_none:""}} </p>
+                            <span
+                                class="alt-font text-extra-medium text-light-brownish-orange text-uppercase d-block margin-10px-top">{{obj.title|default_if_none:""}}</span>
+                            <span class="alt-font text-small text-uppercase d-block letter-spacing-1px">{{obj.company|default_if_none:""}}</span>
+                        </div>
+                        <!-- end testimonial item -->
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <!-- start slider navigation buttons -->
+                <div
+                    class="swiper-button-previous-nav-2 swiper-button-prev light slider-navigation-style-02 rounded-circle d-none d-sm-inline-block">
+                    <i class="fas fa-arrow-left"></i></div>
+                <div
+                    class="swiper-button-next-nav-2 swiper-button-next light slider-navigation-style-02 rounded-circle d-none d-sm-inline-block">
+                    <i class="fas fa-arrow-right"></i></div>
+                <!-- end slider navigation buttons -->
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- end section -->
+
+
+<!-- start section -->
+<section class="bg-light-gray overflow-visible wow animate__fadeIn">
+    <div class="container">
+        <div class="row ">
+            <div class="col px-md-0">
+                <ul
+                    class="portfolio-overlay portfolio-wrapper grid grid-loading grid-2col xl-grid-2col lg-grid-2col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
+                    <li class="grid-sizer"></li>
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
+                        <a href="https://via.placeholder.com/600x600" title="Lightbox gallery image title..."
+                            data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/600x600" alt="" />
+                                    <div
+                                        class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i
+                                            class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="https://via.placeholder.com/600x600" title="Lightbox gallery image title..."
+                            data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/600x600" alt="" />
+                                    <div
+                                        class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i
+                                            class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="https://via.placeholder.com/1200x600" title="Lightbox gallery image title..."
+                            data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/1200x600" alt="" />
+                                    <div
+                                        class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i
+                                            class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                    <!-- start lightbox gallery item -->
+                    <li class="grid-item wow animate__fadeIn" data-wow-delay="0.4s">
+                        <a href="https://via.placeholder.com/1200x600" title="Lightbox gallery image title..."
+                            data-group="lightbox-gallery" class="lightbox-group-gallery-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image bg-extra-dark-gray">
+                                    <img src="https://via.placeholder.com/1200x600" alt="" />
+                                    <div
+                                        class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb lg-padding-30px-tb xs-padding-15px-tb">
+                                        <i
+                                            class="feather icon-feather-zoom-in portfolio-plus-icon font-weight-300 text-white absolute-middle-center icon-small move-top-bottom"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- end lightbox gallery item -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+{% endblock  %}

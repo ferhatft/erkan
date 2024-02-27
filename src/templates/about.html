@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{%load static%}
+{% load i18n %}
+{% block body  %}
+    <!-- BREADCRUMB AREA START -->
+    <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image " data-bg="{% static 'img/bg/14.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner">
+                        <h1 class="page-title">{% trans 'About Us' %}</h1>
+                        <div class="ltn__breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'anasayfa' %}"><span class="ltn__secondary-color"><i
+                                                class="fas fa-home"></i></span> {% trans 'Home' %}</a></li>
+                                <li>{% trans 'About Us' %}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB AREA END -->
+
+    <!-- ABOUT US AREA START -->
+    <div class="ltn__about-us-area pt-120--- pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-img-wrap about-img-left">
+                        <div class="ltn__video-img ltn__video-img-before-none ltn__animation-pulse2">
+                            <img src="{% static 'img/others/hakkımızda-1.png' %}" alt="video popup bg image">
+                            <a class="ltn__video-icon-2 ltn__video-icon-2-border--- border-radius-no ltn__secondary-bg"
+                                href="https://www.youtube.com/embed/"
+                                data-rel="lightcase:myCollection">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-info-wrap">
+                        <div class="section-title-area ltn__section-title-2">
+                            <h6 class="section-subtitle ltn__secondary-color"><span><i
+                                        class="fas fa-square-full"></i></span> {% trans 'Great Experience In Wood' %}</h6>
+                            <h1 class="section-title">{% trans 'Old city wood wooden decoration products' %}</h1>
+                            <p>{% trans 'According to Egyptian mythology, Isis, who was trying to revive her lover, Osiris, finds Osiris’ corpse under a acacia tree. In Taoism, it is mentioned that there is a tree that fruits once in three thousand years, and whoever eats that fruit becomes immortal. What about solar deity Apollon’s impossible love turning into a bay tree and Apollon’s tragic feelings about that? In the pen of Herman Hesse in the 19th century, Siddarta sits under the fig tree to seek wisdom.  ' %}</p>
+                        </div>
+                        <p>{% trans 'Trees have been the subject of the stories of almost every culture in the history of humanity for hundreds of years.. We, as OldCityWoods, wanted to tell a story of our own. Our product is designed by skilled hands and it is totally handmade, and it is made by walnut tree, and also processed naturally for your and your children’s health. On the one side, It is designed with a water groove on the edge for its operation. The other side is waiting for your skilled hands to make the most elegant presentations. In consequence of our story, we count on your veracity about our product and you will take good care of it. We would be glad if you could comment on your reviews about the product. Our product is guaranteed for a year but we don’t think you will need it.' %}</p>
+                        <div class="about-author-info d-flex mt-50">
+                            <div class="author-name-designation  align-self-center mr-30">
+                                <!-- <h4 class="mb-0">Jerry Henson</h4>
+                            <small>/ Shop Director</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT US AREA END -->
+
+  
+    <!-- FEATURE START -->
+    <div class="ltn__feature-area section-bg-1--- pt-120 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h6 class="section-subtitle ltn__secondary-color"><span><i
+                                    class="fas fa-square-full"></i></span> {% trans 'Our Services' %}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-self-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-knife"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'Knife Friendly' %}</a></h3>
+                            <p>{% trans 'This all natural board has perfect solidity and softness to prevent from blunting your knives because of edge grain production technique' %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-shield-variant-with-white-and-black-borders"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'Long Lasting' %}</a></h3>
+                            <p>{% trans 'ready to use for many years, much more durable thanks to coating with natural oils.' %}</p>
+                        </div>
+                    </div>
+                </div>
+               
+              
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-surprise"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'perfect gift for your besties' %}</a></h3>
+                            <p>{% trans 'Our product comes in a classic gift package. It is useful for housewarming, weddings, Christmas, birthdays, Mothers and Fathers Day, or any other family holidays and special occasions' %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-planet-earth"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'coated with natural oils' %}</a></h3>
+                            <p>{% trans 'Since our product has food contact, toxic brighteners such as lacquer and varnish are not used. beeswax and linseed oil were preferred instead.' %} </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-fruits"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'Suitable for food contact' %}</a></h3>
+                            <p>{% trans "Our product comes in a classic gift package. It is useful for housewarming, weddings, Christmas, birthdays, Mother's and Father's Day, or any other family holidays and special occasions." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="ltn__feature-item ltn__feature-item-6 box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <span><i class="flaticon-cutting-board"></i></span>
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">{% trans 'reversible, juice groove' %}</a></h3>
+                            <p>{% trans 'This wooden cutting board has a large, smooth, reversible surface for individually cutting pork, chicken, cheese, grilled meat on barbecues. The deep juice chute allows to collect excess liquid that may occur during food preparation. While using one side of the product for cutting, the other side is suitable for presentation' %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURE END -->
+
+    <!-- VIDEO AREA START -->
+    <div class="ltn__video-popup-area ltn__video-popup-margin---">
+        <div class="ltn__video-bg-img ltn__video-popup-height-600--- bg-overlay-black-30 bg-image bg-fixed ltn__animation-pulse1"
+            data-bg="{% static 'img/others/hakkımızda-2.jpg' %}">
+            <a class="ltn__video-icon-2 ltn__video-icon-2-border---"
+                href="https://www.youtube.com/embed/"
+                data-rel="lightcase:myCollection">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+    </div>
+    <!-- VIDEO AREA END -->
+
+
+    <!-- CALL TO ACTION START (call-to-action-6) -->
+    <div class="ltn__call-to-action-area call-to-action-6 before-bg-bottom---" data-bg="img/1.jpg--">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg text-center---">
+                        <div class="coll-to-info text-color-white">
+                            <h1>{% trans 'Looking for a cutting board?' %}</h1>
+                            <p>{% trans 'We can help you realize your dream of a new cutting board.' %}</p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a class="btn btn-effect-3 btn-white" href="contact.html">{% trans 'Get A Quote' %} <i
+                                    class="icon-next"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CALL TO ACTION END -->
+
+    <!-- TESTIMONIAL AREA START (testimonial-8) -->
+    <div class="ltn__testimonial-area section-bg-1--- pt-120 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area ltn__section-title-2 text-center">
+                        <h6 class="section-subtitle ltn__secondary-color"><span><i
+                                    class="fas fa-square-full"></i></span> {% trans 'Client,s Testimonial' %}</h6>
+                        <h1 class="section-title">{% trans 'Client,S Feedback' %}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row ltn__testimonial-slider-6-active slick-arrow-1">
+
+                
+                {% if clien_opinion %}
+                
+                {% for obj in clien_opinion  %}
+                <div class="col-lg-4">
+                    <div class="ltn__testimonial-item ltn__testimonial-item-7 ltn__testimonial-item-8">
+                        <div class="ltn__testimoni-info">
+                            <div class="ltn__testimoni-author-ratting">
+                                <div class="ltn__testimoni-info-inner">
+                                    <div class="ltn__testimoni-name-designation">
+                                        <h5>{{obj.title}}</h5>
+                                        <label>{{obj.company}}</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                {% ifequal LANGUAGE_CODE 'tr'  %} {{obj.decription|safe}}  {% else %}
+                                {{obj.decription_en|safe}}  {% endifequal %}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- TESTIMONIAL AREA END -->
+
+{% endblock body  %}

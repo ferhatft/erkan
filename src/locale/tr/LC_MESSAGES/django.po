@@ -1,0 +1,382 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-19 15:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\anasayfa\templates\index.html:23 .\anasayfa\templates\index.html:52
+#: .\anasayfa\templates\index.html:81 .\anasayfa\templates\index.html:110
+#: .\anasayfa\templates\index.html:141 .\anasayfa\templates\index.html:170
+#: .\anasayfa\templates\index.html:199 .\anasayfa\templates\index.html:229
+msgid "High Quality"
+msgstr "Yüksek Kalite"
+
+#: .\anasayfa\templates\index.html:24 .\anasayfa\templates\index.html:53
+#: .\anasayfa\templates\index.html:82 .\anasayfa\templates\index.html:111
+#: .\anasayfa\templates\index.html:142 .\anasayfa\templates\index.html:171
+#: .\anasayfa\templates\index.html:200 .\anasayfa\templates\index.html:230
+msgid "Highest Standards <br> Of wood"
+msgstr "Ahşapta En Yüksek <br> Standartlar"
+
+#: .\anasayfa\templates\index.html:26 .\anasayfa\templates\index.html:55
+#: .\anasayfa\templates\index.html:84 .\anasayfa\templates\index.html:113
+#: .\anasayfa\templates\index.html:144 .\anasayfa\templates\index.html:173
+#: .\anasayfa\templates\index.html:202 .\anasayfa\templates\index.html:232
+msgid ""
+"İt provides various Features - knife-friendly, all-natural, reversibility, "
+"and durability for long-term usage."
+msgstr "Bıçak dostu, tamamen doğal, uzun süreli kullanıma uygun."
+
+#: .\anasayfa\templates\index.html:31 .\anasayfa\templates\index.html:60
+#: .\anasayfa\templates\index.html:89 .\anasayfa\templates\index.html:118
+#: .\anasayfa\templates\index.html:149 .\anasayfa\templates\index.html:178
+#: .\anasayfa\templates\index.html:207 .\anasayfa\templates\index.html:237
+msgid "Get A Quate"
+msgstr "Fiyat Teklifi Alın"
+
+#: .\anasayfa\templates\index.html:33 .\anasayfa\templates\index.html:62
+#: .\anasayfa\templates\index.html:91 .\anasayfa\templates\index.html:120
+#: .\anasayfa\templates\index.html:151 .\anasayfa\templates\index.html:180
+#: .\anasayfa\templates\index.html:209 .\anasayfa\templates\index.html:239
+msgid "Learn More"
+msgstr "Bilgi edin"
+
+#: .\anasayfa\templates\index.html:266 .\templates\about.html:46
+msgid "Great Experience In Wood"
+msgstr "Ahşapta Büyük Deneyim"
+
+#: .\anasayfa\templates\index.html:267 .\templates\about.html:47
+msgid "Old city wood wooden decoration products"
+msgstr "Old city wood ahşap dekorasyon ürünleri"
+
+#: .\anasayfa\templates\index.html:268 .\templates\about.html:48
+msgid ""
+"According to Egyptian mythology, Isis, who was trying to revive her lover, "
+"Osiris, finds Osiris’ corpse under a acacia tree. In Taoism, it is mentioned "
+"that there is a tree that fruits once in three thousand years, and whoever "
+"eats that fruit becomes immortal. What about solar deity Apollon’s "
+"impossible love turning into a bay tree and Apollon’s tragic feelings about "
+"that? In the pen of Herman Hesse in the 19th century, Siddarta sits under "
+"the fig tree to seek wisdom.  "
+msgstr ""
+"Mısır mitolojisinde Osiris’in cesedini, aşkını hayata döndürmeye çalışan "
+"İsis, akasya ağacının dibinde bulur. Taoizm’de ise üç bin yılda bir, "
+"tüketene ölümsüzlük iksiri veren bir meyvenin ağacından bahsedilir. Peki "
+"Güneş Tanrısı Apollon’un imkansız aşkının defne ağacına dönüşmesi ile "
+"yaşadığı trajik duygulara ne demeli?  19. Yüzyılda ise Herman Hesse incir "
+"ağacının dibinde oturtur bilgeliği arayan Siddartha’yı.."
+
+#: .\anasayfa\templates\index.html:286
+msgid "Cutting Board"
+msgstr "Kesme tahtası"
+
+#: .\anasayfa\templates\index.html:287
+msgid "Cutting Board Service For You"
+msgstr "Sizin İçin Kesme Tahtası Hizmeti"
+
+#: .\anasayfa\templates\index.html:288
+msgid ""
+"Trees have been the subject of the stories of almost every culture in the "
+"history of humanity for hundreds of years.. We, as OldCityWoods, wanted to "
+"tell a story of our own. Our product is designed by skilled hands and it is "
+"totally handmade, and it is made by walnut tree, and also processed "
+"naturally for your and your children’s health."
+msgstr ""
+"Ağaçlar, Yüzlerce yıldır insanlık tarihinde neredeyse her kültürün "
+"hikayelerine konu olmuştur. Biz de OldCityWood olarak kendi hikayemizi "
+"anlatmak istedik. Orman artığı olarak elde edildikten sonra usta ellerden el "
+"yapımı olarak çıkan ürünümüz, ceviz ağacından kesilip sizin ve "
+"çocuklarınızın sağlığı için doğal yollarla işlenerek bir tarafı kesme işlemi "
+"için kenarında su oluklu olarak tasarlanmıştır. Diğer tarafı en şık "
+"sunumları yapmak için sizin maharetli ellerinizi beklemektedir."
+
+#: .\anasayfa\templates\index.html:291
+msgid ""
+"On the one side, It is designed with a water groove on the edge for its "
+"operation. The other side is waiting for your skilled hands to make the most "
+"elegant presentations. In consequence of our story, we count on your "
+"veracity about our product and you will take good care of it. We would be "
+"glad if you could comment on your reviews about the product. Our product is "
+"guaranteed for a year but we don’t think you will need it."
+msgstr ""
+"Bu hikayemizin bir sonucu olarak evinize sonsuza dek misafir olarak gelen "
+"ürünümüze iyi bakacağınızdan şüphemiz yok. Ürünle ilgili görüşlerinizi "
+"bildiren yorum yazabilirseniz çok seviniriz. Ürünümüz 1 yıl garantilidir.. "
+"Ancak buna ihtiyaç duyacağınızı hiç zannetmiyoruz"
+
+#: .\anasayfa\templates\index.html:295
+msgid "View Products"
+msgstr "Ürünleri Görüntüle"
+
+#: .\anasayfa\templates\index.html:307 .\templates\about.html:83
+msgid "Knife Friendly"
+msgstr "Bıçak Dostu"
+
+#: .\anasayfa\templates\index.html:308
+msgid "Prevent from blunting your knife because of edge grain production"
+msgstr "Kenar tahıl üretimi sayesinde bıçağınızın körelmesini önleyin"
+
+#: .\anasayfa\templates\index.html:310 .\anasayfa\templates\index.html:324
+#: .\anasayfa\templates\index.html:338 .\anasayfa\templates\index.html:352
+msgid "Service Details"
+msgstr "Hizmet Detayları"
+
+#: .\anasayfa\templates\index.html:321
+msgid "Reversible"
+msgstr "tersinir"
+
+#: .\anasayfa\templates\index.html:322
+msgid "Because of food contact, toxic brighteners are not used "
+msgstr "Gıda ile temasından dolayı toksik parlatıcılar kullanılmaz."
+
+#: .\anasayfa\templates\index.html:335
+msgid "Juice Groove"
+msgstr "Meyve suyu oluğu"
+
+#: .\anasayfa\templates\index.html:336
+msgid "It collects the water flowing from food in its Groove"
+msgstr "Yiyeceklerden akan suyu oluğunda toplar."
+
+#: .\anasayfa\templates\index.html:349
+msgid "All Natural"
+msgstr "Tamamen doğal"
+
+#: .\anasayfa\templates\index.html:350
+msgid "Because of food contact, toxic brighteners are not used"
+msgstr "Gıda ile temasından dolayı toksik parlatıcılar kullanılmaz."
+
+#: .\anasayfa\templates\index.html:371
+msgid "Cutting Board Projects"
+msgstr "Kesme Tahtası Projeleri"
+
+#: .\anasayfa\templates\index.html:372
+msgid "Our Recent Projects"
+msgstr "Son Projelerimiz"
+
+#: .\anasayfa\templates\index.html:417 .\anasayfa\templates\index.html:418
+msgid "Client,s Feedback"
+msgstr "Müşterinin Geribildirimi"
+
+#: .\anasayfa\templates\index.html:468
+msgid "Wanted To Free Consultaion?"
+msgstr "Ücretsiz Danışmanlık mı İstiyorsunuz?"
+
+#: .\anasayfa\templates\index.html:469
+msgid "We are always Ready To Help You"
+msgstr "Size Her Zaman Yardıma Hazırız"
+
+#: .\anasayfa\templates\index.html:473 .\templates\base.html:145
+#: .\templates\base.html:217 .\templates\contact.html:18
+#: .\templates\contact.html:91
+msgid "Contact"
+msgstr "İletişim"
+
+#: .\templates\about.html:11 .\templates\about.html:16
+#: .\templates\base.html:143 .\templates\base.html:215
+#: .\templates\base.html:311
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: .\templates\about.html:15 .\templates\base.html:142
+#: .\templates\base.html:214 .\templates\contact.html:17
+msgid "Home"
+msgstr "Anasayfa"
+
+#: .\templates\about.html:50
+msgid ""
+"Trees have been the subject of the stories of almost every culture in the "
+"history of humanity for hundreds of years.. We, as OldCityWoods, wanted to "
+"tell a story of our own. Our product is designed by skilled hands and it is "
+"totally handmade, and it is made by walnut tree, and also processed "
+"naturally for your and your children’s health. On the one side, It is "
+"designed with a water groove on the edge for its operation. The other side "
+"is waiting for your skilled hands to make the most elegant presentations. In "
+"consequence of our story, we count on your veracity about our product and "
+"you will take good care of it. We would be glad if you could comment on your "
+"reviews about the product. Our product is guaranteed for a year but we don’t "
+"think you will need it."
+msgstr ""
+"Ağaçlar, Yüzlerce yıldır insanlık tarihinde neredeyse her kültürün "
+"hikayelerine konu olmuştur. Biz de OldCityWood olarak kendi hikayemizi "
+"anlatmak istedik. Orman artığı olarak elde edildikten sonra usta ellerden el "
+"yapımı olarak çıkan ürünümüz, ceviz ağacından kesilip sizin ve "
+"çocuklarınızın sağlığı için doğal yollarla işlenerek bir tarafı kesme işlemi "
+"için kenarında su oluklu olarak tasarlanmıştır. Diğer tarafı en şık "
+"sunumları yapmak için sizin maharetli ellerinizi beklemektedir."
+
+#: .\templates\about.html:72
+msgid "Our Services"
+msgstr "hizmetlerimiz"
+
+#: .\templates\about.html:84
+msgid ""
+"This all natural board has perfect solidity and softness to prevent from "
+"blunting your knives because of edge grain production technique"
+msgstr ""
+"Ürünlerimiz tamamen doğaldır, kenar tahıl üretim tekniği sayesinde "
+"bıçaklarınızın körelmesini önlemek için mükemmel sağlamlığa ve yumuşaklığa "
+"sahiptir."
+
+#: .\templates\about.html:94
+msgid "Long Lasting"
+msgstr "Uzun ömürlü"
+
+#: .\templates\about.html:95
+msgid ""
+"ready to use for many years, much more durable thanks to coating with "
+"natural oils."
+msgstr ""
+"Uzun yıllar kullanıma hazırdır, doğal yağlar sayesinde çok daha dayanıklı."
+
+#: .\templates\about.html:107
+msgid "perfect gift for your besties"
+msgstr "Sevdikleriniz için mükemmel bir hediye"
+
+#: .\templates\about.html:108
+msgid ""
+"Our product comes in a classic gift package. It is useful for housewarming, "
+"weddings, Christmas, birthdays, Mothers and Fathers Day, or any other family "
+"holidays and special occasions"
+msgstr ""
+"Ürünümüz hediye paketiyle gelmektedir. Yeni eve taşınma partisi, düğünler, "
+"Noel, doğum günleri, Anneler ve Babalar Günü veya diğer aile tatilleri ve "
+"özel günler için mükemmel hediye olabilir."
+
+#: .\templates\about.html:118
+msgid "coated with natural oils"
+msgstr "doğal yağlarla kaplanmış"
+
+#: .\templates\about.html:119
+msgid ""
+"Since our product has food contact, toxic brighteners such as lacquer and "
+"varnish are not used. beeswax and linseed oil were preferred instead."
+msgstr ""
+"Ürünümüz gıda ile temas ettiğinden cila, vernik gibi toksik parlatıcılar "
+"kullanılmamaktadır. yerine balmumu ve keten tohumu yağı tercih edildi."
+
+#: .\templates\about.html:130
+msgid "Suitable for food contact"
+msgstr "Gıda temasına uygun"
+
+#: .\templates\about.html:131
+msgid ""
+"Our product comes in a classic gift package. It is useful for housewarming, "
+"weddings, Christmas, birthdays, Mother's and Father's Day, or any other "
+"family holidays and special occasions."
+msgstr ""
+"Ürünümüz hediye paketiyle gelmektedir. Yeni eve taşınma partisi, düğünler, "
+"Noel, doğum günleri, Anneler ve Babalar Günü veya diğer aile tatilleri ve "
+"özel günler için mükemmel hediye olabilir."
+
+#: .\templates\about.html:141
+msgid "reversible, juice groove"
+msgstr "ters çevrilebilir, meyve suyu oluğu"
+
+#: .\templates\about.html:142
+msgid ""
+"This wooden cutting board has a large, smooth, reversible surface for "
+"individually cutting pork, chicken, cheese, grilled meat on barbecues. The "
+"deep juice chute allows to collect excess liquid that may occur during food "
+"preparation. While using one side of the product for cutting, the other side "
+"is suitable for presentation"
+msgstr ""
+"Tavuk, ızgara eti ve sebzeleri ayrı ayrı kesmek için geniş, pürüzsüz, ters "
+"çevrilebilir bir yüzeye sahiptir. Derin meuve suyu oluğu, yemek hazırlama "
+"sırasında oluşabilecek fazla sıvının toplanmasını sağlar. Bir tarafı kesmek "
+"için bir tarafı da sunum için kullanılabilir."
+
+#: .\templates\about.html:172
+msgid "Looking for a cutting board?"
+msgstr "Kesme tahtası mı arıyorsunuz?"
+
+#: .\templates\about.html:173
+msgid "We can help you realize your dream of a new cutting board."
+msgstr ""
+"Yeni bir kesme tahtası hayalinizi gerçekleştirmenize yardımcı olabiliriz."
+
+#: .\templates\about.html:176 .\templates\base.html:171
+#: .\templates\contact.html:70
+msgid "Get A Quote"
+msgstr "Fiyat Teklifi Alın"
+
+#: .\templates\about.html:193
+msgid "Client,s Testimonial"
+msgstr "Müşteri GÖrüşleri"
+
+#: .\templates\about.html:194
+msgid "Client,S Feedback"
+msgstr "Müşterinin Görüşü"
+
+#: .\templates\base.html:55 .\templates\base.html:276
+#: .\templates\contact.html:56
+msgid "Turkey"
+msgstr "Türkiye"
+
+#: .\templates\base.html:130
+msgid "Get Support"
+msgstr "Desstek al"
+
+#: .\templates\base.html:144 .\templates\base.html:216
+msgid "Shop"
+msgstr "Mağaza"
+
+#: .\templates\base.html:162
+msgid "Search here..."
+msgstr "Burada ara..."
+
+#: .\templates\base.html:207
+msgid "Search..."
+msgstr "Ara..."
+
+#: .\templates\base.html:308
+msgid "Quick links"
+msgstr "Hızlı Erişim"
+
+#: .\templates\base.html:312
+msgid "Products"
+msgstr "Ürünler"
+
+#: .\templates\base.html:313
+msgid "Contact us"
+msgstr "İletişim"
+
+#: .\templates\base.html:326
+msgid "All Rights Reserved "
+msgstr "Tüm hakları saklıdır"
+
+#: .\templates\base.html:332
+msgid "Desined by Ferhat Tugrul"
+msgstr " Ferhat Tuğrul tarafından tasarlandı"
+
+#: .\templates\contact.html:13
+msgid "Contact Us"
+msgstr "İletişim"
+
+#: .\templates\contact.html:37
+msgid "Email Addres"
+msgstr "Email adresi"
+
+#: .\templates\contact.html:46
+msgid "Phone Number"
+msgstr "Telefon Numarası"
+
+#: .\templates\contact.html:55
+msgid "Address"
+msgstr "Adres"
+
+#~ msgid "About"
+#~ msgstr "Hakkımızda"

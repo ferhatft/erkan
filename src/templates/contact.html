@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{%load static%}
+{% load i18n %}
+{% block body  %}
+
+  <!-- start page title -->
+  <section class="bg-gradient-light-orange-light-pink">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-end extra-small-screen align-items-end">
+            <div class="w-100 w-md-50 page-title-extra-small">
+                <h1 class="alt-font text-extra-dark-gray position-relative padding-90px-left padding-15px-right sm-padding-55px-left mb-md-0 sm-margin-20px-bottom"><span class="page-title-separator-line bg-black w-70px sm-w-40px"></span>Communiquer, c’est notre travail ! </h1>
+            </div>
+            <div class="w-100 w-md-50">
+                <h4 class="alt-font font-weight-500 text-extra-dark-gray mb-0">Contactez-nous pour plus d’informations !</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page title --> 
+<!-- start section -->
+<section class="big-section wow animate__fadeIn">
+    <div class="container">
+        <div class="row align-items-end justify-content-center">
+            <div class="col-12 col-lg-5 col-md-8 md-margin-50px-bottom">
+                <div class="feature-box feature-box-left-icon-middle padding-4-rem-all bg-light-gray overflow-hidden background-position-top background-no-repeat lg-padding-3-rem-lr md-padding-5-rem-all xs-padding-3-half-rem-all" style="background-image: url('images/quotes-01.png');">
+                    <div class="feature-box-icon margin-25px-right xs-margin-15px-right">
+                        <img class="border-radius-100 w-80px xs-w-50px" src="https://via.placeholder.com/80x80" alt="">
+                    </div>
+                    <div class="feature-box-content">
+                        <div class="text-large text-extra-dark-gray alt-font font-weight-500 w-90">Erkan Ünal</div>
+                    </div>
+                    <p class="margin-30px-top margin-15px-bottom w-80 lg-w-100">logo mail : udesign.contact@gmail.com</p>
+                    <a  href="tel:+330781284193" class="text-small text-extra-dark-gray font-weight-500 text-decoration-line-bottom text-uppercase">logo tel : +33 7 81 28 41 93</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-1 col-md-8">
+                <h4 class="alt-font text-black font-weight-600">Une question ? Plus d’informations ? Contactez-nous </h4>
+
+                <form class="alt-font text-extra-dark-gray" method="POST" action="">
+                    {% csrf_token %}
+                    <div class="input-wrp">
+                        {{form.name}}
+                    </div>
+                    <div class="input-wrp">
+                        {{form.email}}
+                    </div>
+                    <div class="input-wrp">
+                        {{form.phone}}
+                    </div>
+                    <div class="input-wrp">
+                        {{form.message}}
+                    </div>
+                    {{ form.errors }}
+                    <button class="btn btn-medium btn-dark-gray mb-0" type="submit">ENVOYER</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+<!-- start section -->
+<section class="half-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- start feature box item-->
+            <div class="col-12 col-sm-auto sm-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                <div class="d-flex justify-content-center align-items-center padding-15px-lr h-100">
+                    <i class="feather icon-feather-headphones align-middle icon-extra-small text-gradient-magenta-orange margin-10px-right"></i>
+                    <span class="text-extra-dark-gray alt-font text-medium">+33 7 81 28 41 93</span>
+                </div>
+            </div>
+            <!-- end feature box item-->
+            <!-- start feature box item-->
+            <div class="col-12 col-sm-auto sm-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
+                <div class="d-flex justify-content-center align-items-center padding-15px-lr h-100">
+                    <i class="feather icon-feather-mail align-middle icon-extra-small text-gradient-magenta-orange margin-10px-right"></i>
+                    <a href="mailto:udesign.contact@gmail.com" class="text-extra-dark-gray alt-font text-medium">udesign.contact@gmail.com</a>
+                </div>
+            </div>
+            <!-- end feature box item-->
+            <!-- start feature box item-->
+            <div class="col-12 col-sm-auto wow animate__fadeIn" data-wow-delay="0.6s">
+                <div class="d-flex justify-content-center align-items-center padding-15px-lr h-100">
+                    <i class="feather icon-feather-globe align-middle icon-extra-small text-gradient-magenta-orange margin-10px-right"></i>
+                    <a href="{{home_url}}" class="text-extra-dark-gray alt-font text-medium">udesign.com</a>
+                </div>
+            </div>
+            <!-- end feature box item-->
+        </div>  
+    </div>
+</section>
+<!-- end section -->
+
+{% endblock body  %}
+
+
+<form id="contact-form" method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-item input-item-name ltn__custom-icon">
+                {{form.name}}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-item input-item-email ltn__custom-icon">
+                {{form.email}}
+            </div>
+        </div>
+    </div>
+    <div class="input-item input-item-textarea ltn__custom-icon">
+        {{form.message}}
+    </div>
+    <div class="btn-wrapper mt-0">
+        <button class="btn theme-btn-1 btn-effect-1 text-uppercase"
+            type="submit">{% trans 'Contact' %}</button>
+    </div>
+    <p class="form-messege mb-0 mt-20"></p>
+</form>
